@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta property="og:title" content="profile-PARK MISUN" />
+        <meta property="og:description" content="profile-PARK MISUN" />
+        <meta property="og:image" content="profile-PARK MISUN" />
+        <title>PARK MISUN!!!</title>
+        <style>
+            
+           body 
+           {
+            background-color:#148727;// #44398A;
+           }
+           .profile
+           {
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            border: 2px solid white;
+
+            background-image: url(images-icon.png);
+            background-position: center;
+            background-size: cover;
+           }
+           table, th, td {
+                 border: 0px ;
+                 color: white;
+                font-size: 16px;
+                margin-bottom: 30px;
+            }
+           .main {
+                color: white;
+                font-size: 20px;
+                margin-top: 30px;
+            }
+            .sub {
+                color: white;
+                font-size: 14px;
+                margin-top: 0%;
+            }
+            .wrap {
+                width: 350px;
+                margin: 30px auto 0px auto;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .wrap > a 
+            {
+                font-size: 14px;
+                font-weight: bold;
+                color: #0c4a16; //#44398A;
+
+                background-color: white;
+                border-radius: 8px;
+
+                box-shadow: 3px 3px 5px 0px black;
+
+                width: 200px;
+                height: 50px;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                margin-bottom: 10px;
+                text-decoration: none;
+            }
+
+            .wrap > a:hover {
+            background-color: #d6d1d1;
+            }
+
+        .menubar {
+                width: 100px;
+                margin: 30px auto 0px auto;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .menubar > a 
+            {
+                font-size: 14px;
+                font-weight: bold;
+                color: #204a0c;
+
+                background-color: white;
+                border-radius: 8px;
+
+                box-shadow: 3px 3px 5px 0px black;
+
+                width: 100px;
+                height: 30px;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                margin-bottom: 10px;
+                text-decoration: none;
+            }
+
+            .menubar > a:hover {
+            background-color: #d6d1d1;
+            }
+        #overlay {
+            position: fixed;
+            width: 191px;
+            height: 326px;
+            background: #e5f506;
+            border-radius: 10px;
+            display: none;
+            top: 200px;
+            left: 300px;
+            right: 0;
+            bottom: 0;
+            z-index: 2;
+            cursor: pointer;
+        }
+        #text{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            font-size: 50px;
+            color: white;
+            transform: translate(-50%,-50%);
+            -ms-transform: translate(-50%,-50%);
+        }
+           </style>
+    </head>
+    <body>
+        <div id="overlay" onclick="off()">
+            <div id="text">
+                <div class="menubar">
+                    <a target="_blank" href="">生活情報</a>
+                    <a target="_blank" href="">国際交流</a>
+                    <a target="_blank" href="">イベント情報</a>
+                    <a target="_blank" href="">アクセス</a>
+            </div>
+            </div>
+          </div>
+          
+<script>
+function on() {
+  document.getElementById("overlay").style.display = "block";
+}
+
+function off() {
+  document.getElementById("overlay").style.display = "none";
+}
+</script>
+        <div class="wrap">
+                <div class="profile"></div>
+                <h1 class="main"> せたがや国際交流センター </h1>
+                <p class="sub">こんにちは。</p>
+               
+                  <div style="padding:20px">
+                    <button onclick="on()">MENU</button>
+                  </div>
+                <a target="_blank" href="">生活情報</a>
+                <a target="_blank" href="">国際交流</a>
+                <a target="_blank" href="">イベント情報</a>
+                <a target="_blank" href="">アクセス</a>
+                <div class="table">
+                    <table> <tr><td>follow me </td> 
+                                <td><a href="" target="_blank"><img src="facebook-icon.png" alt="facebook"></a></td>
+                                <td><a href="" target="_blank"><img src="instagram-icon.png" alt="instagram"></a></td>
+                </tr></table></div>
+        </div>
+    </body>
+</html>
